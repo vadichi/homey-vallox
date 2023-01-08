@@ -49,12 +49,13 @@
             data: {},
 
             settings: {
-              address: ipInput.value
+              address: ipInput.value,
+              pooling_rate: 10
             }
           }).then((_) => {
             Homey.done();
           }).catch((_) => {
-            Homey.alert('An error occurred while adding the device');
+            Homey.alert('An error occurred adding this device. Please try again.');
           });
         });
     </script>

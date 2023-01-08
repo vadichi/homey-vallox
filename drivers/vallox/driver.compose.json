@@ -13,6 +13,15 @@
       "label": { "en": "IP address" },
       "value": "127.0.0.1",
       "hint": { "en": "Vallox unit IP address" }
+    },
+    {
+      "id": "pooling_rate",
+      "type": "number",
+      "label": { "en": "Pooling rate" },
+      "value": 10,
+      "min": 1,
+      "max": 60,
+      "units": { "en": "seconds" }
     }
   ],
   "pair": [
