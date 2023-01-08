@@ -1,0 +1,29 @@
+{
+  "title": { "en": "When profile is set to ..." },
+  "titleFormatted": { "en": "When profile is set to [[profile]]" },
+  "args": [
+    {
+      "type": "dropdown",
+      "name": "profile",
+      "title": { "en": "Profile" },
+      "values": [
+        {
+          "id": "1",
+          "title": { "en":  "Home" }
+        },
+        {
+          "id": "2",
+          "title": { "en":  "Away" }
+        },
+        {
+          "id": "3",
+          "title": { "en":  "Boost" }
+        },
+        {
+          "id": "4",
+          "title": { "en":  "Fireplace" }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vallox Unit Pairing</title>
+
+    <style>
+        .name {
+            margin-top: 10px;
+        }
+
+        .ip {
+            margin-top: 10px;
+        }
+
+        .connect {
+            margin-top: 10px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <label for="name-input" class="name-label"></label>
+        <input type="text" class="name-input" id="name-input" placeholder="Device name">
+    </div>
+
+    <div class="ip">
+        <label for="ip-input" class="ip-label"></label>
+        <input type="text" class="ip-input" id="ip-input" placeholder="Device IP address">
+    </div>
+
+    <button class="connect" id="connect">Connect</button>
+
+    <script type="application/javascript">
+        const ipInput = document.getElementById('ip-input');
+        const nameInput = document.getElementById('name-input');
+        const connect = document.getElementById('connect');
+
+        Homey.setTitle("Vallox Unit Pairing");
+
+        connect.addEventListener('click', () => {
+          Homey.createDevice({
+            name: nameInput.value,
+
+            data: {},
+
+            settings: {
+              address: ipInput.value
+            }
+          }).then((_) => {
+            Homey.done();
+          }).catch((_) => {
+            Homey.alert('An error occurred while adding the device');
+          });
+        });
+    </script>
+</body>
+</html>

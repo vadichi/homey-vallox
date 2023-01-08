@@ -1,0 +1,25 @@
+{
+  "type": "enum",
+  "title": { "en": "Profile" },
+  "uiComponent": "picker",
+  "getable": true,
+  "setable": true,
+  "values": [
+    {
+      "id": "1",
+      "title": { "en":  "Home" }
+    },
+    {
+      "id": "2",
+      "title": { "en":  "Away" }
+    },
+    {
+      "id": "3",
+      "title": { "en":  "Boost" }
+    },
+    {
+      "id": "4",
+      "title": { "en":  "Fireplace" }
+    }
+  ]
+}
