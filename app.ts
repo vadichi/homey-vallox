@@ -2,7 +2,7 @@
 
 import Homey = require('homey');
 
-class HomeyVent extends Homey.App {
+class HomeyVallox extends Homey.App {
 
   async onInit() {
     this.log('[Initialisation 1/1] Application initialised');
@@ -10,4 +10,4 @@ class HomeyVent extends Homey.App {
 
 }
 
-module.exports = HomeyVent;
+module.exports = HomeyVallox;

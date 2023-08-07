@@ -1,5 +1,5 @@
 {
-  "name": "com.vadimtch.homey_vent",
+  "name": "com.vadimtch.homey_vallox",
   "version": "1.1.0",
   "main": "app.ts",
   "scripts": {

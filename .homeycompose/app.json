@@ -1,5 +1,5 @@
 {
-  "id": "com.vadimtch.homey_vent",
+  "id": "com.vadimtch.homey_vallox",
   "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "sdk": 3,
@@ -7,7 +7,7 @@
     "local"
   ],
   "name": {
-    "en": "HomeyVent"
+    "en": "Homey-Vallox"
   },
   "description": {
     "en": "Vallox API interface for Homey"
@@ -23,6 +23,6 @@
   },
   "author": {
     "name": "Vadim Chichikalyuk",
-    "email": "vadim.chichikalyuk@gmail.com"
+    "email": "chichikalyuk@gmail.com"
   }
 }
